@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+	int a[50],sumfac=0,fact=1,n,i;
+	scanf("%d",&n);
+	printf("Enter the elements into an array");
+	for(i=0;i<n;i++)
+	{
+	fact=1;
+	scanf("%d",&a[i]);
+	while(a[i]!=0)
+	{
+	fact=fact*a[i];
+	a[i]--;
+	}
+	sumfac+=fact;
+}
+printf("SUM OF THE FACTORIALS OF ALL THE ELEMENTS IN AN ARRAY IS ****** %d *******",sumfac);
+return 0;
+}
